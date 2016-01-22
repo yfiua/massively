@@ -9,6 +9,7 @@
 " Sections:
 "    -> Vundle configurations
 "    -> General
+"    -> Fcitx support
 "    -> VIM user interface
 "    -> Colors and Fonts
 "    -> Files and backups
@@ -46,6 +47,8 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Bundle 'jistr/vim-nerdtree-tabs'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
+
+Plugin 'JuliaLang/julia-vim'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -160,6 +163,14 @@ set tm=500
 
 " Add a bit extra margin to the left
 set foldcolumn=1
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Fcitx support
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Auto switch to English mode after leaving insert mode
+if has('unix')
+  autocmd! InsertLeave *  if system('fcitx-remote') != 0 | call system('fcitx-remote -c') | endif
+endif
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
