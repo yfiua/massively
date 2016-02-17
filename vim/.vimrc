@@ -9,6 +9,7 @@
 " Sections:
 "    -> Vundle configurations
 "    -> General
+"    -> Fcitx support
 "    -> VIM user interface
 "    -> Colors and Fonts
 "    -> Files and backups
@@ -26,7 +27,6 @@
 
 set nocompatible
 set clipboard=unnamed
-
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Vundle Configurations
@@ -49,6 +49,7 @@ Plugin 'Xuyuanp/nerdtree-git-plugin'
 
 " Plugin for julia
 Plugin 'JuliaLang/julia-vim'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -163,6 +164,14 @@ set tm=500
 
 " Add a bit extra margin to the left
 set foldcolumn=1
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Fcitx support
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Auto switch to English mode after leaving insert mode
+if has('unix')
+  autocmd! InsertLeave *  if system('fcitx-remote') != 0 | call system('fcitx-remote -c') | endif
+endif
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -401,8 +410,9 @@ map <leader>q :e ~/buffer<cr>
 map <leader>x :e ~/buffer.md<cr>
 
 " Toggle paste mode on and off
-map <leader>pp :setlocal paste!<cr>
-
+nnoremap <F2> :set invpaste paste?<CR>
+set pastetoggle=<F2>
+set showmode
 
 
 
