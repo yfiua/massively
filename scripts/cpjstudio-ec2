@@ -1,0 +1,2 @@
+#!/bin/sh
+ssh -i ~/.ssh/admin_cpjstudio.pem ec2-user@www.cpjstudio.net
