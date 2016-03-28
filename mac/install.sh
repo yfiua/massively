@@ -18,5 +18,8 @@ if [ ! -d ~/Library/KeyBindings ]; then
 fi
 cp ./DefaultKeyBinding.dict ~/Library/KeyBindings
 
+echo "Changing editor for git to MacVIM ..."
+git config --global --replace-all core.editor "mvim -v"
+
 echo "Success! (if u don't see an error)"
 
