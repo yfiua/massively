@@ -1,5 +1,5 @@
 #!/bin/sh
-cp .vimrc ~/.vimrc
+cp vimrc ~/.vimrc
 cp -r colors ~/.vim/colors
 
 # Install Vundle
