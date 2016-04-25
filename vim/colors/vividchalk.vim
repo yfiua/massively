@@ -100,7 +100,7 @@ if &background == "light" || has("gui_running")
 else
     hi Normal guibg=Black ctermbg=NONE
 endif
-highlight StatusLine    guifg=Black   guibg=#aabbee gui=bold ctermfg=Black ctermbg=White  cterm=bold
+highlight StatusLine    guifg=Black   guibg=#aabbee gui=bold ctermfg=Black ctermbg=White  cterm=none
 highlight StatusLineNC  guifg=#444444 guibg=#aaaaaa gui=none ctermfg=Black ctermbg=Grey   cterm=none
 "if &t_Co == 256
     "highlight StatusLine ctermbg=117
@@ -124,7 +124,7 @@ call s:hibg("Search"    ,"#555555","DarkBlue",81)
 highlight IncSearch     guifg=White guibg=Black ctermfg=White ctermbg=Black
 highlight MoreMsg       guifg=#00AA00 ctermfg=Green
 highlight LineNr        guifg=#DDEEFF ctermfg=DarkGray ctermbg=Black
-call s:hibg("LineNr"    ,"#222222","DarkBlue",80)
+"call s:hibg("LineNr"    ,"#222222","DarkBlue",80)
 highlight Question      none
 high link Question      MoreMsg
 highlight Title         guifg=Magenta ctermfg=Magenta
@@ -140,7 +140,7 @@ highlight SpellRare     ctermbg=DarkMagenta
 highlight SpellCap      ctermbg=DarkBlue
 highlight SpellLocal    ctermbg=DarkCyan
 
-call s:hibg("Folded"    ,"#110077","DarkBlue",17)
+call s:hibg("Folded"    ,"#110077","Dark",16)
 call s:hifg("Folded"    ,"#aaddee","LightCyan",63)
 highlight FoldColumn    none
 high link FoldColumn    Folded
