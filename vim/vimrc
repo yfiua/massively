@@ -181,7 +181,7 @@ endif
 syntax enable 
 
 try
-    colorscheme my_elflord
+    colorscheme vividchalk
 catch
 endtry
 
