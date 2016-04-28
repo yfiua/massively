@@ -27,9 +27,9 @@ hi VisualNOS   ctermfg=15   ctermbg=24  guifg=#FFFFFF   guibg=#204a87
 hi Search   ctermfg=236   ctermbg=228  guifg=#000000   guibg=#FFFF8C  cterm=bold gui=bold
 hi Folded   ctermfg=8 ctermbg=15 guifg=#808080 guibg=#ECECEC gui=bold cterm=bold
 hi Title    ctermfg=167 guifg=#ef5939
-hi StatusLine ctermfg=238 ctermbg=250 guifg=#404040 guibg=#bbbbbb gui=bold cterm=bold
-hi StatusLineNC ctermfg=238 ctermbg=252 guifg=#404040 guibg=#d4d4d4 gui=italic cterm=italic
-hi VertSplit ctermfg=250 ctermbg=250 guifg=#bbbbbb guibg=#bbbbbb gui=none cterm=none
+hi StatusLine ctermfg=232 ctermbg=252 guifg=#404040 guibg=#bbbbbb gui=bold cterm=bold
+hi StatusLineNC ctermfg=238 ctermbg=252 guifg=#404040 guibg=#d4d4d4 gui=None cterm=None
+hi VertSplit ctermfg=188 ctermbg=188 guifg=#bbbbbb guibg=#bbbbbb gui=none cterm=none
 hi LineNr   ctermfg=246 ctermbg=15 guifg=#959595 guibg=#ECECEC gui=bold cterm=bold
 hi SpecialKey ctermfg=6 guifg=#177F80 gui=italic cterm=italic
 hi WarningMsg ctermfg=167 guifg=#ef5939
@@ -101,7 +101,8 @@ hi link schemeFunc      Statement
 
 " {{{ Tabs
 hi TabLine ctermfg=238 ctermbg=188 guifg=#404040 guibg=#dddddd gui=none
-hi TabLineFill ctermfg=238 ctermbg=188 guifg=#404040 guibg=#dddddd gui=none
+hi TabLineFill cterm=None ctermfg=238 ctermbg=188 guifg=#404040 guibg=#dddddd gui=none
+"hi TabLineFill ctermfg=238 ctermbg=188 guifg=#404040 guibg=#dddddd gui=none
 hi TabLineSel   ctermfg=238 guifg=#404040 gui=bold
 " }}}
 
