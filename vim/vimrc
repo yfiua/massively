@@ -53,6 +53,9 @@ Plugin 'JuliaLang/julia-vim'
 " Vim Gutter
 Plugin 'airblade/vim-gitgutter'
 
+" My Tabline
+Plugin 'yfiua/tabline.vim'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
