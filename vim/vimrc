@@ -50,6 +50,9 @@ Plugin 'Xuyuanp/nerdtree-git-plugin'
 " Plugin for julia
 Plugin 'JuliaLang/julia-vim'
 
+" Vim Gutter
+Plugin 'airblade/vim-gitgutter'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -178,7 +181,10 @@ endif
 " => Colors and Fonts
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Enable syntax highlighting
-syntax enable 
+syntax enable
+
+" Enable cursor line
+set cursorline
 
 try
     set t_Co=256
