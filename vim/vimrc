@@ -170,7 +170,7 @@ set foldcolumn=1
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Auto switch to English mode after leaving insert mode
 if has('unix')
-  autocmd! InsertLeave *  if system('fcitx-remote') != 0 | call system('fcitx-remote -c') | endif
+    autocmd! InsertLeave *  if system('fcitx-remote') != 0 | call system('fcitx-remote -c') | endif
 endif
 
 
@@ -181,11 +181,10 @@ endif
 syntax enable 
 
 try
-    colorscheme vividchalk
+    set t_Co=256
+    colorscheme github
 catch
 endtry
-
-set background=dark
 
 " Set extra options when running in GUI mode
 if has("gui_running")
