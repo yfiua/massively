@@ -20,16 +20,16 @@ endif
 let colors_name = "github"
 
 " {{{ General colors
-hi Normal   ctermfg=0   ctermbg=255  guifg=#000000   guibg=#F8F8FF
+hi Normal   ctermfg=0   ctermbg=15  guifg=#000000   guibg=#F8F8FF
 hi Cursor   ctermfg=239   ctermbg=15  guifg=#F8F8FF   guibg=#444454
 hi Visual   ctermfg=15   ctermbg=61  guifg=#FFFFFF   guibg=#3465a3
 hi VisualNOS   ctermfg=15   ctermbg=24  guifg=#FFFFFF   guibg=#204a87
 hi Search   ctermfg=236   ctermbg=228  guifg=#000000   guibg=#FFFF8C  cterm=bold gui=bold
 hi Folded   ctermfg=8 ctermbg=15 guifg=#808080 guibg=#ECECEC gui=bold cterm=bold
 hi Title    ctermfg=167 guifg=#ef5939
-hi StatusLine ctermfg=232 ctermbg=252 guifg=#404040 guibg=#bbbbbb gui=bold cterm=bold
-hi StatusLineNC ctermfg=238 ctermbg=252 guifg=#404040 guibg=#d4d4d4 gui=None cterm=None
-hi VertSplit ctermfg=188 ctermbg=188 guifg=#bbbbbb guibg=#bbbbbb gui=none cterm=none
+hi StatusLine ctermfg=232 ctermbg=245 guifg=#404040 guibg=#bbbbbb gui=bold cterm=bold
+hi StatusLineNC ctermfg=238 ctermbg=245 guifg=#404040 guibg=#d4d4d4 gui=None cterm=None
+hi VertSplit ctermfg=245 ctermbg=245 guifg=#bbbbbb guibg=#bbbbbb gui=none cterm=none
 hi LineNr   ctermfg=246 ctermbg=15 guifg=#959595 guibg=#ECECEC gui=bold cterm=bold
 hi SpecialKey ctermfg=6 guifg=#177F80 gui=italic cterm=italic
 hi WarningMsg ctermfg=167 guifg=#ef5939
@@ -40,6 +40,7 @@ hi ColorColumn ctermbg=254 guibg=#e4e4e4
 " {{{ Vim => 7.0 specific colors
 if version >= 700
     hi CursorLine term=None cterm=None  ctermbg=253 guibg=#D8D8DD
+    hi CursorLineNr   cterm=bold ctermfg=130 ctermbg=253 gui=bold guifg=Brown
     hi MatchParen ctermfg=0 ctermbg=252 guifg=#000000 guibg=#cdcdfd
     hi Pmenu        ctermfg=15 ctermbg=8 guifg=#ffffff guibg=#808080 gui=bold   cterm=bold
     hi PmenuSel     ctermfg=0 ctermbg=252 guifg=#000000 guibg=#cdcdfd  gui=italic cterm=italic
@@ -100,8 +101,8 @@ hi link schemeFunc      Statement
 " }}}
 
 " {{{ Tabs
-hi TabLine ctermfg=238 ctermbg=188 guifg=#404040 guibg=#dddddd gui=none
-hi TabLineFill cterm=None ctermfg=238 ctermbg=188 guifg=#404040 guibg=#dddddd gui=none
+hi TabLine ctermfg=238 ctermbg=245 guifg=#404040 guibg=#dddddd gui=none
+hi TabLineFill cterm=None ctermfg=238 ctermbg=245 guifg=#404040 guibg=#dddddd gui=none
 "hi TabLineFill ctermfg=238 ctermbg=188 guifg=#404040 guibg=#dddddd gui=none
 hi TabLineSel   ctermfg=238 guifg=#404040 gui=bold
 " }}}
