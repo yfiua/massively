@@ -33,6 +33,7 @@ hi VertSplit ctermfg=245 ctermbg=245 guifg=#bbbbbb guibg=#bbbbbb gui=none cterm=
 hi LineNr   ctermfg=246 ctermbg=15 guifg=#959595 guibg=#ECECEC gui=bold cterm=bold
 hi SpecialKey ctermfg=6 guifg=#177F80 gui=italic cterm=italic
 hi WarningMsg ctermfg=167 guifg=#ef5939
+hi Error ctermbg=15 ctermfg=9 cterm=reverse
 hi ErrorMsg ctermbg=15 ctermfg=196 guibg=#f8f8ff guifg=#ff1100 gui=undercurl cterm=undercurl
 hi ColorColumn ctermbg=254 guibg=#e4e4e4
 " }}}
@@ -50,10 +51,10 @@ endif
 " }}}
 
 " {{{ Diff highlighting
-hi DiffAdd    ctermfg=233 ctermbg=194 guifg=#003300 guibg=#DDFFDD gui=none cterm=none
+hi DiffAdd    ctermfg=233  ctermbg=194  guifg=#003300 guibg=#DDFFDD gui=none cterm=none
 hi DiffChange ctermbg=255  guibg=#ececec gui=none   cterm=none
 hi DiffText   ctermfg=233  ctermbg=189  guifg=#000033 guibg=#DDDDFF gui=none cterm=none
-hi DiffDelete ctermfg=252 ctermbg=224   guifg=#DDCCCC guibg=#FFDDDD gui=none    cterm=none
+hi DiffDelete ctermfg=252  ctermbg=224  guifg=#DDCCCC guibg=#FFDDDD gui=none cterm=none
 " }}}
 
 " {{{ Syntax highlighting
