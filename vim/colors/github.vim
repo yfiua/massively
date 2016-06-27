@@ -42,8 +42,8 @@ if version >= 700
     hi CursorLine term=None cterm=None  ctermbg=253 guibg=#D8D8DD
     hi CursorLineNr   cterm=bold ctermfg=130 ctermbg=253 gui=bold guifg=Brown
     hi MatchParen ctermfg=0 ctermbg=252 guifg=#000000 guibg=#cdcdfd
-    hi Pmenu        ctermfg=15 ctermbg=8 guifg=#ffffff guibg=#808080 gui=bold   cterm=bold
-    hi PmenuSel     ctermfg=0 ctermbg=252 guifg=#000000 guibg=#cdcdfd  gui=italic cterm=italic
+    hi Pmenu        ctermfg=15 ctermbg=8 guifg=#ffffff guibg=#808080
+    hi PmenuSel     ctermfg=0 ctermbg=252 guifg=#000000 guibg=#cdcdfd  gui=bold cterm=bold
     hi PmenuSbar    ctermfg=238 ctermbg=0 guifg=#444444 guibg=#000000
     hi PmenuThumb   ctermfg=248 ctermbg=248 guifg=#aaaaaa guibg=#aaaaaa
 endif
