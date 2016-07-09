@@ -53,8 +53,9 @@ Plugin 'JuliaLang/julia-vim'
 " Vim Gutter
 Plugin 'airblade/vim-gitgutter'
 
-" My Tabline
+" My Tabline and color scheme
 Plugin 'yfiua/tabline.vim'
+Plugin 'yfiua/vim-github-colorscheme'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
