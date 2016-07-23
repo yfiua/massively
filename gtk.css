@@ -1,19 +1,10 @@
 .header-bar.default-decoration {
     padding-top: 3px;
-    padding-bottom: 2px;
+    padding-bottom: 3px;
 }
 
 .header-bar.default-decoration .button.titlebutton {
     padding-top: 3px;
-    padding-bottom: 2px;
-}
-
-TerminalWindow .notebook {
-	padding: 0;
-	border-width: 0;
-}
-
-TerminalWindow .notebook tab:active {
-    background-color: #EEEEEE;
+    padding-bottom: 3px;
 }
 
