@@ -1,7 +1,3 @@
-yfiua@yfiua-T430:~$ dconf list /org/gnome/terminal/legacy/profiles:/
-:b1dcc9dd-5262-4d8d-a863-c897e6d979b9/
-
-yfiua@yfiua-T430:~$ dconf dump /org/gnome/terminal/legacy/profiles:/
 [:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
 background-color='rgb(255,255,255)'
 use-theme-colors=false
