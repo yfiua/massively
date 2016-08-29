@@ -294,6 +294,20 @@ au TabLeave * let g:lasttab = tabpagenr()
 " Super useful when editing files in the same directory
 map <leader>te :tabedit <c-r>=expand("%:p:h")<cr>/
 
+" Alt + {0~9} for switching tabs
+noremap 1 1gt
+noremap 2 2gt
+noremap 3 3gt
+noremap 4 4gt
+noremap 5 5gt
+noremap 6 6gt
+noremap 7 7gt
+noremap 8 8gt
+noremap 9 9gt
+" Alt + PgUp / PgDn
+noremap [5;3~ gT
+noremap [6;3~ gt
+
 " Switch CWD to the directory of the open buffer
 map <leader>cd :cd %:p:h<cr>:pwd<cr>
 
