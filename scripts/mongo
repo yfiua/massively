@@ -1,0 +1,2 @@
+#!/bin/sh
+ssh -Y ubuntu@141.26.209.30
