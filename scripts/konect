@@ -1,0 +1,2 @@
+#!/bin/sh
+ssh -i ~/.ssh/jun-cloud.key -Y ubuntu@141.26.208.254
