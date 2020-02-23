@@ -244,6 +244,9 @@ set ai "Auto indent
 set si "Smart indent
 set wrap "Wrap lines
 
+" Display the content of the last line as much as possible
+set display+=lastline
+
 """"""""""""""""""""""""""""""
 " => Visual mode related
 """"""""""""""""""""""""""""""
