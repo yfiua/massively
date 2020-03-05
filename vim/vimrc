@@ -102,6 +102,12 @@ command W w !sudo tee % > /dev/null
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Show the path and filename in the terminal title
+" set title titlestring=%(%{expand(\"%:~:.:h\")}%)/%t\ -\ Vim
+
+" Show the filename in the terminal title
+set title titlestring=%t\ -\ Vim
+
 " Set 7 lines to the cursor - when moving vertically using j/k
 set so=7
 
@@ -122,7 +128,7 @@ else
     set wildignore+=.git\*,.hg\*,.svn\*
 endif
 
-"Always show current position
+" Always show current position
 set ruler
 
 " Height of the command bar
@@ -415,8 +421,15 @@ map <F12> :NERDTreeTabsToggle<cr>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Spell checking
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set spelllang=en
+
 " Pressing ,ss will toggle and untoggle spell checking
 map <leader>ss :setlocal spell!<cr>
+map <leader>su :setlocal spell spelllang=en_us<cr>
+map <leader>sg :setlocal spell spelllang=en_gb<cr>
+
+" Fix the last mistake using the first suggestion with <C-l>
+inoremap <C-l> <c-g>u<Esc>[s1z=`]a<c-g>u
 
 " Shortcuts using <leader>
 map <leader>sn ]s
