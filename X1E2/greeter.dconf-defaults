@@ -1,0 +1,9 @@
+## Add the following content to /etc/gdm3/greeter.dconf-defaults
+# Touchpad speed
+[org/gnome/desktop/peripherals/touchpad]
+speed=1.0
+click-method='area'
+tap-to-click=true
+
+[org/gnome/desktop/peripherals/mouse]
+accel-profile='flat'
