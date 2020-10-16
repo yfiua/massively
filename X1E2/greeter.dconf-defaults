@@ -2,7 +2,7 @@
 # Touchpad speed
 [org/gnome/desktop/peripherals/touchpad]
 speed=1.0
-click-method='area'
+click-method='areas'
 tap-to-click=true
 
 [org/gnome/desktop/peripherals/mouse]
