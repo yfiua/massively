@@ -50,12 +50,18 @@ Plugin 'Xuyuanp/nerdtree-git-plugin'
 " Plugin for julia
 Plugin 'JuliaLang/julia-vim'
 
+" Plugin for Python
+Plugin 'vim-python/python-syntax'
+
 " Vim Gutter
 Plugin 'airblade/vim-gitgutter'
 
 " My Tabline and color scheme
 Plugin 'yfiua/tabline.vim'
 Plugin 'yfiua/vim-github-colorscheme'
+
+" Plugin for LaTeX-Suite
+Plugin 'LaTeX-Suite-aka-Vim-LaTeX'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
