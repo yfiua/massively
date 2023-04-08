@@ -44,7 +44,7 @@ Plugin 'gmarik/Vundle.vim'
 
 " NERDTree
 Plugin 'scrooloose/nerdtree'
-Plugin 'mattmartini/vim-nerdtree-tabs'
+Plugin 'yfiua/vim-nerdtree-tabs'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 
 " Airline
