@@ -50,11 +50,12 @@ Plugin 'Xuyuanp/nerdtree-git-plugin'
 " Airline
 Plugin 'vim-airline/vim-airline'
 
-" Plugin for julia
-Plugin 'JuliaLang/julia-vim'
+" Plugin for language supports
+"Plugin 'JuliaLang/julia-vim'
+"Plugin 'vim-python/python-syntax'
 
-" Plugin for Python
-Plugin 'vim-python/python-syntax'
+" ALE
+Plugin 'dense-analysis/ale'
 
 " Vim Gutter
 Plugin 'airblade/vim-gitgutter'
@@ -91,6 +92,7 @@ filetype plugin indent on    " required
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Show line numbers
 set number
+set numberwidth=3
 
 " Sets how many lines of history VIM has to remember
 set history=700
