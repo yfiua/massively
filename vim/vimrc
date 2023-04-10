@@ -192,11 +192,10 @@ set noerrorbells
 set novisualbell
 set t_vb=
 
-" Add a bit extra margin to the left
-set foldcolumn=1
-
-" Sign column into number column
-set signcolumn=number
+" Disable foldcolumn, instead use signcolumn
+set foldcolumn=0
+set signcolumn=yes
+autocmd FileType nerdtree set signcolumn=no
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Fcitx support
