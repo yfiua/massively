@@ -1,6 +1,13 @@
 export CLICOLOR=1
 export LSCOLORS="ExGxBxDxCxEgEdxbxgxcxd"
-export PROMPT="%F{green}%n@%m%F{black}:%F{blue}%0~%F$ "
+
+setopt PROMPT_SUBST
+
+parse_git_branch() {
+    git branch 2>/dev/null | sed -n 's/^\* / (/p' | sed 's/$/)/'
+}
+
+export PROMPT='%B${debian_chroot:+($debian_chroot)}%F{green}%n@%m%f:%F{blue}%~%F{red}$(parse_git_branch)%f$%b '
 
 # keybindings
 bindkey '\e[H'    beginning-of-line
@@ -21,19 +28,3 @@ export PATH="/opt/homebrew/opt/node@20/bin:$PATH"
 ## For compilers to find node@20
 export LDFLAGS="-L/opt/homebrew/opt/node@20/lib"
 export CPPFLAGS="-I/opt/homebrew/opt/node@20/include"
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/yfiua/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/Users/yfiua/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/Users/yfiua/miniconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/Users/yfiua/miniconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-
